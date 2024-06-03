@@ -1,0 +1,20 @@
+.scroll-down-animation {
+  transform: translate(-50%, 0);
+  animation: wheel-down 1.5s ease-in-out infinite;
+}
+
+@keyframes wheel-down {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  20%,
+  70% {
+    opacity: 1;
+  }
+  90%,
+  100% {
+    transform: translate(-50%, 150%);
+    opacity: 0;
+  }
+}
